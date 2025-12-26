@@ -80,3 +80,18 @@ nmap 192.168.1.79
 
 **Resultado:**  
 El escaneo revela múltiples puertos TCP abiertos en el host objetivo, incluyendo servicios como FTP (21), SSH (22), Telnet (23), SMTP (25), HTTP (80) y MySQL (3306), lo que indica una amplia superficie de ataque y justifica la necesidad de realizar una enumeración más detallada de servicios.
+
+
+### 3. Enumeración de servicios y versiones
+
+Se realiza la enumeración de servicios para identificar las aplicaciones y versiones que se ejecutan en los puertos abiertos del host objetivo **192.168.1.179**.
+
+Comando utilizado:
+```bash
+nmap -sV 192.168.1.179
+```
+
+## Evidencia
+![Enumeración de servicios](images/service-enumeration.png)
+**Resultado:**  
+La enumeración identifica múltiples servicios desactualizados y potencialmente vulnerables, como **vsftpd 2.3.4**, **Apache 2.2.8**, **Samba 3.x**, **MySQL 5.0.51a** y la presencia de un **bind shell en el puerto 1524**, lo que evidencia una superficie de ataque crítica en el host objetivo y justifica la continuación con análisis de vulnerabilidades.
