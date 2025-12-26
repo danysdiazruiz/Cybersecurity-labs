@@ -66,3 +66,16 @@ Se verifica desde el sistema objetivo que la interfaz de red tiene asignada la I
 
 ## Evidencia
 ![IP en Metasploitable 2](images/metasploitable-ifconfig.png)
+
+
+### 2. Escaneo de puertos TCP
+
+Comando utilizado:
+```bash
+nmap 192.168.1.79
+```
+
+## Evidencia
+![Escaneo de puertos TCP](images/port-scan-basic.png)
+Se identifican varios puertos TCP abiertos en el host objetivo, lo que confirma la exposición de múltiples servicios y valida la continuación del proceso de enumeración.
+
