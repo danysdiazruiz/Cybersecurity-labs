@@ -46,3 +46,5 @@ Comando utilizado: ```bash nmap -sn 192.168.1.0/24  ```
 ---
 
 ## Evidencia ![Descubrimiento de hosts](images/host-discovery.png)
+
+Se detectaron múltiples hosts activos en la red local. Para efectos del laboratorio, se analiza únicamente el host objetivo (Metasploitable) con IP 192.168.1.79.
