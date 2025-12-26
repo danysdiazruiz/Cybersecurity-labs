@@ -77,5 +77,6 @@ nmap 192.168.1.79
 
 ## Evidencia
 ![Escaneo de puertos TCP](images/port-scan-basic.png)
-Se identifican varios puertos TCP abiertos en el host objetivo, lo que confirma la exposición de múltiples servicios y valida la continuación del proceso de enumeración.
 
+**Resultado:**  
+El escaneo revela múltiples puertos TCP abiertos en el host objetivo, incluyendo servicios como FTP (21), SSH (22), Telnet (23), SMTP (25), HTTP (80) y MySQL (3306), lo que indica una amplia superficie de ataque y justifica la necesidad de realizar una enumeración más detallada de servicios.
