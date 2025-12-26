@@ -59,3 +59,10 @@ ping -c 3 192.168.1.79
 
 ## Evidencia
 ![Validación de IP objetivo](images/target-validation-ping.png)
+
+### Confirmación de IP en el host objetivo (Metasploitable 2)
+
+Se verifica desde el sistema objetivo que la interfaz de red tiene asignada la IP **192.168.1.79**.
+
+## Evidencia
+![IP en Metasploitable 2](images/metasploitable-ifconfig.png)
