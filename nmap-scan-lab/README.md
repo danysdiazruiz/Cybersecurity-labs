@@ -48,3 +48,14 @@ Comando utilizado: ```bash nmap -sn 192.168.1.0/24  ```
 ## Evidencia ![Descubrimiento de hosts](images/host-discovery.png)
 
 Se detectaron múltiples hosts activos en la red local. Para efectos del laboratorio, se analiza únicamente el host objetivo (Metasploitable) con IP 192.168.1.79.
+
+### Validación del host objetivo
+
+Se valida conectividad con el host identificado como objetivo (Metasploitable 2) en la IP **192.168.1.79** mediante ICMP.
+
+```bash
+ping -c 3 192.168.1.79
+```
+
+## Evidencia
+![Validación de IP objetivo](images/target-validation-ping.png)
