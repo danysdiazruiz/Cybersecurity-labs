@@ -41,7 +41,7 @@ Reconnaissance | Active Scanning | T1595 | Escaneo activo para recopilar informa
 ## Procedimiento
 
 ### 1. Descubrimiento de host
-Comando utilizado: ```bash nmap -sn 192.168.1.0/24  ```
+Comando utilizado: ```bash nmap -sn 192.168.1.0/24
 
 ---
 
@@ -57,14 +57,14 @@ Se valida conectividad con el host identificado como objetivo (Metasploitable 2)
 ping -c 3 192.168.1.179
 ```
 
-## Evidencia
+#### Evidencia
 ![Validación de IP objetivo](images/target-validation-ping.png)
 
 ### Confirmación de IP en el host objetivo (Metasploitable 2)
 
 Se verifica desde el sistema objetivo que la interfaz de red tiene asignada la IP **192.168.1.179**.
 
-## Evidencia
+#### Evidencia
 ![IP en Metasploitable 2](images/metasploitable-ifconfig.png)
 
 
@@ -91,7 +91,7 @@ Comando utilizado:
 nmap -sV 192.168.1.179
 ```
 
-## Evidencia
+#### Evidencia
 ![Enumeración de servicios](images/service-enumeration.png)
 **Resultado:**  
 La enumeración identifica múltiples servicios desactualizados y potencialmente vulnerables, como **vsftpd 2.3.4**, **Apache 2.2.8**, **Samba 3.x**, **MySQL 5.0.51a** y la presencia de un **bind shell en el puerto 1524**, lo que evidencia una superficie de ataque crítica en el host objetivo y justifica la continuación con análisis de vulnerabilidades.
@@ -116,7 +116,7 @@ La enumeración identifica múltiples servicios desactualizados y potencialmente
 
 ---
 
-## Resultados
+#### Resultados
 
 - Se identificó el host objetivo **Metasploitable 2** en la IP **192.168.1.179**.
 - Se detectaron múltiples puertos TCP abiertos mediante escaneo básico.
