@@ -136,6 +136,34 @@ Esta información es fundamental para un analista de seguridad, ya que permite p
 
 ---
 
+## Recomendaciones de mitigación
+
+Con base en los servicios y versiones identificados, se proponen las siguientes acciones para reducir la superficie de ataque del sistema:
+
+- **Actualizar o eliminar servicios vulnerables:**  
+  Reemplazar versiones antiguas como **vsftpd 2.3.4**, **Apache 2.2.8**, **Samba 3.x** y **MySQL 5.0.51a** por versiones soportadas y seguras.
+
+- **Deshabilitar servicios innecesarios:**  
+  Cerrar puertos que no sean requeridos, como **Telnet (23)**, **IRC (6667)** y el **bind shell (1524)**.
+
+- **Eliminar accesos inseguros:**  
+  El puerto **1524** debe ser cerrado inmediatamente, ya que expone una shell como root sin autenticación.
+
+- **Reemplazar protocolos inseguros:**  
+  Sustituir **Telnet** por **SSH** y asegurar configuraciones de cifrado.
+
+- **Aplicar principios de mínimo privilegio:**  
+  Limitar accesos a servicios como bases de datos y servicios web solo a hosts autorizados.
+
+- **Implementar controles de red:**  
+  Uso de firewalls, segmentación de red y reglas de filtrado para restringir el acceso a servicios críticos.
+
+- **Monitoreo y hardening:**  
+  Configurar registros, detección de intrusos y aplicar guías de hardening al sistema operativo y servicios.
+
+
+---
+
 ## Aprendizajes
 
 - Uso de Nmap para descubrimiento de hosts y escaneo de puertos.
