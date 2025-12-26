@@ -43,4 +43,4 @@ Reconnaissance | Active Scanning | T1595 | Escaneo activo para recopilar informa
 ###  1. Descubrimiento de host
 Comando utilizado:
 ```bash
-nmap -sn 192.168.56.0/24
+nmap -sn 10.0.2.0/24
